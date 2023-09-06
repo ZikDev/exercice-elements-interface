@@ -3,6 +3,8 @@
 // ==================================== */
 
 :root {
+  --dark-blue: #3a5af7;
+  --gray: #eaeaea;
 }
 
 /* ====================================
@@ -26,6 +28,9 @@ body {
   width: 320px;
   font-size: 1rem;
   line-height: 1.5rem;
+  background: #e1e7f6;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
 }
 
 a {
@@ -42,3 +47,59 @@ video {
 /* ====================================
 // base rules
 // ==================================== */
+
+li,
+p {
+  font-size: 18px;
+}
+
+nav {
+  background-color: #1c1c1c;
+  color: var(--gray);
+  padding: 31px 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+li {
+  border-top: 0.5px solid var(--dark-blue);
+}
+
+ul li:nth-child(4) {
+  border-bottom: 0.5px solid var(--dark-blue);
+}
+
+.button {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: start;
+  gap: 32px;
+  padding: 64px 16px;
+}
+
+button {
+  background-color: var(--dark-blue);
+  color: var(--gray);
+  font-size: 20px;
+  padding: 12px 32px;
+  box-shadow: 0px 2px 4px 0px;
+  border: none;
+}
+
+.carre {
+  border-radius: 5px;
+}
+
+.rond {
+  border-radius: 24px;
+}
+
+.plus {
+  fill: #fff;
+  filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.19));
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+}
